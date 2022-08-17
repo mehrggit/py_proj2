@@ -26,6 +26,8 @@ steps:
 - script: |
     pip install pytest pytest-azurepipelines
     echo ".................. testing ..................."
+    echo "docker version"
+    docker -v
     python py2.py
     echo "Testing done"
   displayName: 'pytest'
