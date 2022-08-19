@@ -6,7 +6,8 @@
 trigger:
 - main
 
-pool: ivr-stage-va
+pool: 
+    vmImage: 'ubuntu-latest'
 strategy:
   matrix:
     Python37:
